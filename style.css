@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    height: 70px;
+    padding: 0 12%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff6a00;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a,
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.4s;
+}
+
+nav a:hover,
+.footer-links a:hover {
+    color: #ff6a00;
+}
+
+
+.login {
+    background: transparent;
+    border: 1px solid #444;
+    padding: 8px 15px;
+    transition: 0.6s;
+    color: #888;
+    border-radius: 8px;
+}
+.login:hover {
+    background: #ff6a00;
+    border-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+.btn2 {
+    background: #ff6a00;
+    border: 1px solid #ff6a00;
+    padding: 13px;
+    transition: 0.3s;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.btn2:hover {
+    background: transparent;
+    border-color: #ff6a00;
+    color: #ff6a00;
+    cursor: pointer;
+}
+
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+    min-height: 520px;
+
+    padding: 80px 15%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            #321700,
+            transparent 35%
+        );
+}
+
+.welcome-text {
+    width: 50%;
+}
+
+.tag {
+    color: #ff6a00;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+}
+
+.welcome h1 {
+    font-size: 55px;
+    line-height: 1;
+}
+
+.welcome h1 span {
+    color: #ff6a00;
+}
+
+.intro {
+    color: #888;
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    max-width: 450px;
+
+    margin: 25px 0;
+}
+
+/* =========================
+   ACTIVITY GRAPH
+========================= */
+
+.activity {
+    width: 350px;
+    height: 270px;
+
+    padding: 25px;
+
+    background: #101010;
+
+    border: 1px solid #292929;
+
+    transform: rotate(-3deg);
+
+    box-shadow: 0 20px 50px #000;
+    transition: 0.3s;
+}
+.activity:hover {
+    transform: rotate(5deg);
+}
+
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+
+    color: #777;
+
+    font-size: 9px;
+
+    margin-bottom: 30px;
+}
+
+.bars {
+    height: 140px;
+
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+
+    border-bottom: 1px solid #333;
+}
+
+.bar {
+    width: 25px;
+    background: #ff6a00;
+}
+
+.b1 {
+    height: 50px;
+}
+
+.b2 {
+    height: 80px;
+}
+
+.b3 {
+    height: 65px;
+}
+
+.b4 {
+    height: 110px;
+}
+
+.b5 {
+    height: 90px;
+}
+
+.b6 {
+    height: 125px;
+}
+
+.b7 {
+    height: 100px;
+}
+
+.days {
+    display: flex;
+    justify-content: space-around;
+
+    color: #666;
+
+    font-size: 9px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    padding: 80px 12%;
+
+    text-align: center;
+
+    background: #0d0d0d;
+}
+
+.dashboard h2 {
+    font-size: 35px;
+}
+
+.dashboard h2 span {
+    color: #ff6a00;
+}
+
+.subtitle {
+    color: #777;
+
+    font-size: 12px;
+
+    margin: 15px auto 40px;
+
+    max-width: 500px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+}
+.stat {
+    width: 220px;
+
+    padding: 30px;
+
+    background: #111;
+
+    border: 1px solid #222;
+
+    transition: 0.3s;
+}
+.stat:hover {
+    border-color: #ff6a00;
+    transform: translateY(-10px);
+}
+
+.stat h3 {
+    color: #ff6a00;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.stat p {
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.features {
+    padding: 90px 15%;
+
+    display: flex;
+    gap: 70px;
+
+    align-items: center;
+}
+
+.feature-text {
+    width: 55%;
+}
+
+.feature-text h2 {
+    font-size: 35px;
+    line-height: 1.1;
+}
+
+.feature-text h2 span {
+    color: #ff6a00;
+}
+
+.feature-text > p {
+    color: #777;
+
+    font-size: 12px;
+    line-height: 1.7;
+
+    margin: 20px 0;
+}
+
+.steps {
+    display: flex;
+    gap: 15px;
+}
+.step{
+    transition: 0.5s;
+}
+.step:hover {
+    transform: translateY(-10px);
+    border-color: #ff6a00;
+}
+
+.steps div {
+    padding: 15px;
+
+    background: #111;
+
+    border: 1px solid #222;
+
+    width: 150px;
+}
+
+.steps strong {
+    color: #ff6a00;
+
+    font-size: 20px;
+}
+
+.steps p {
+    color: #aaa;
+
+    font-size: 10px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   GOAL BOX
+========================= */
+
+.goal-box {
+    width: 40%;
+
+    padding: 35px;
+
+    background: #101010;
+
+    border: 1px solid #292929;
+    transition: 0.3s;
+}
+.goal-box:hover {
+    border-color: #ff6a00;
+    transform: translateY(-10px);
+}
+
+.goal-box > p {
+    color: #777;
+
+    font-size: 9px;
+}
+
+.goal-box h3 {
+    margin: 20px 0;
+
+    font-size: 20px;
+}
+
+.progress {
+    width: 100%;
+    height: 8px;
+
+    background: #252525;
+
+    margin-bottom: 12px;
+}
+
+.progress div {
+    width: 72%;
+    height: 100%;
+
+    background: #ff6a00;
+}
+
+.goal-box span {
+    color: #ff6a00;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   WORKOUTS
+========================= */
+
+.workouts {
+    padding: 80px 15%;
+
+    text-align: center;
+
+    background: #0d0d0d;
+}
+
+.workouts h2 {
+    font-size: 35px;
+}
+
+.workouts h2 span {
+    color: #ff6a00;
+}
+
+.workout-container {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 40px;
+}
+
+.workout {
+    width: 33.33%;
+
+    text-align: left;
+
+    padding: 30px;
+
+    background: #111;
+
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.workout:hover {
+    border-color: #ff6a00;
+    transform: translateY(-10px);
+}
+
+.workout-icon {
+    color: #ff6a00;
+
+    font-size: 20px;
+
+    margin-bottom: 35px;
+}
+
+.workout h3 {
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.workout p {
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MOTIVATION
+========================= */
+
+.motivation {
+    padding: 100px 20%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #321700,
+            #080808 60%
+        );
+}
+
+.motivation h2 {
+    font-size: 40px;
+}
+
+.motivation h2 span {
+    color: #ff6a00;
+}
+
+.motivation > p:not(.tag) {
+    color: #777;
+
+    font-size: 12px;
+
+    margin: 20px auto 25px;
+
+    max-width: 450px;
+}
+
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+    padding: 80px 15%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.newsletter div {
+    width: 45%;
+}
+
+.newsletter h2 {
+    font-size: 32px;
+}
+
+.newsletter h2 span {
+    color: #ff6a00;
+}
+
+.newsletter p:not(.tag) {
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    margin-top: 15px;
+}
+
+form {
+    width: 45%;
+}
+
+input {
+    width: 70%;
+
+    padding: 14px;
+
+    background: #111;
+
+    border: 1px solid #292929;
+
+    color: white;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff6a00;
+}
+
+form button {
+    margin-left: 5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 50px 15%;
+
+    border-top: 1px solid #222;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+footer p {
+    color: #666;
+
+    font-size: 10px;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 20px;
+}
+
+footer small {
+    color: #555;
+
+    font-size: 9px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 25px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .welcome {
+        padding: 60px 25px;
+
+        display: block;
+    }
+
+    .welcome-text {
+        width: 100%;
+    }
+
+    .welcome h1 {
+        font-size: 42px;
+    }
+
+    .activity {
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+
+    .stats {
+        flex-wrap: wrap;
+    }
+
+    .stat {
+        width: 48%;
+    }
+
+
+    .features {
+        padding: 70px 25px;
+
+        display: block;
+    }
+
+    .feature-text {
+        width: 100%;
+    }
+
+    .goal-box {
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .steps {
+        flex-wrap: wrap;
+    }
+
+
+    .workouts {
+        padding: 70px 25px;
+    }
+
+    .workout-container {
+        display: block;
+    }
+
+    .workout {
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+
+
+    .motivation {
+        padding: 80px 25px;
+    }
+
+
+    .newsletter {
+        padding: 70px 25px;
+
+        display: block;
+    }
+
+    .newsletter div,
+    form {
+        width: 100%;
+    }
+
+    form {
+        margin-top: 30px;
+    }
+
+    input {
+        width: 65%;
+    }
+
+
+    footer {
+        padding: 40px 25px;
+
+        display: block;
+    }
+
+    .footer-links {
+        margin: 25px 0;
+    }
+}
